@@ -1,29 +1,23 @@
 {
-  "env": {
-    "develop": {
-      "plugins": [
-        [
-          "babel-plugin-istanbul",
-          {
-            "include": [
-              "src/**/*.js"
+    "plugins": [
+      [
+        "babel-plugin-istanbul", {
+            "include": ["src/**/*.js"]
+        }
+      ]
+    ],
+    "presets": [
+      [
+        "babel-preset-gatsby",
+        {
+          "targets": {
+            "browsers": [
+              ">0.25%",
+              "not dead"
             ]
           }
-        ]
-      ]
-    }
-  },
-  "presets": [
-    [
-      "babel-preset-gatsby",
-      {
-        "targets": {
-          "browsers": [
-            ">0.25%",
-            "not dead"
-          ]
         }
-      }
+      ]
     ]
-  ]
-}
+  }
+  
